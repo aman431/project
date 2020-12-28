@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         cursor:'pointer'
     },
     blue: {
-        backgroundColor: 'rgb(8, 8, 51)',
+        backgroundColor: 'rgb(32, 32, 102)',
         borderRadius: 4,
         padding: 10,
         color: "whiteSmoke",
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
         cursor: 'pointer'
     },
     blue_circle: {
-        backgroundColor: 'rgb(8, 8, 51)',
+        backgroundColor: 'rgb(32, 32, 102)',
         borderRadius: 10,
         padding: 10,
         color: "whiteSmoke",
