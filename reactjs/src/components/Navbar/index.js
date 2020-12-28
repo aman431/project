@@ -61,6 +61,7 @@ export default function SimpleTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{display:'flex', flexDirection:'row', backgroundColor:'white'}}>
+        <img style={{marginLeft:'15px', marginTop:'5px', marginRight:'10px'}}height="40" width="60" src="https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/mk3ejteswarf7e5kq5us" />
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
           <Tab className={classes.tabs} label="Dashboard" {...a11yProps(0)} />
           <Tab className={classes.tabs} label="Discovery" {...a11yProps(1)} />
