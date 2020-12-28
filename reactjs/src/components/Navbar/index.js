@@ -43,8 +43,11 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.paper,
   },
+  tabs: {
+    color: 'black'
+  }
 }));
 
 export default function SimpleTabs() {
@@ -57,26 +60,16 @@ export default function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{display:'flex', flexDirection:'row'}}>
-        <p style={{marginLeft:'20px'}}>VAVO</p>
+      <AppBar position="static" style={{display:'flex', flexDirection:'row', backgroundColor:'white'}}>
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Dashboard" {...a11yProps(0)} />
-          <Tab label="Discovery" {...a11yProps(1)} />
-          <Tab label="Campaign" {...a11yProps(2)} />
-          <Tab label="Performance" {...a11yProps(2)} />
-          <Tab label="Payout" {...a11yProps(2)} />
-          <Tab label="Setting" {...a11yProps(2)} />
+          <Tab className={classes.tabs} label="Dashboard" {...a11yProps(0)} />
+          <Tab className={classes.tabs} label="Discovery" {...a11yProps(1)} />
+          <Tab className={classes.tabs} label="Campaign" {...a11yProps(2)} />
+          <Tab className={classes.tabs} label="Performance" {...a11yProps(2)} />
+          <Tab className={classes.tabs} label="Payout" {...a11yProps(2)} />
+          <Tab className={classes.tabs} label="Setting" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
-      {/* <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel> */}
     </div>
   );
 }

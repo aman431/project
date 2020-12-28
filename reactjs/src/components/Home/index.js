@@ -35,7 +35,8 @@ const useStyles = makeStyles((theme) => ({
         padding: 10,
         color: "whiteSmoke",
         width: 100,
-        textAlign: 'center'
+        textAlign: 'center',
+        cursor:'pointer'
     },
     blue: {
         backgroundColor: 'rgb(8, 8, 51)',
@@ -43,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
         padding: 10,
         color: "whiteSmoke",
         width: 100,
-        textAlign: 'center'
+        textAlign: 'center',
+        cursor: 'pointer'
     },
     blue_circle: {
         backgroundColor: 'rgb(8, 8, 51)',
@@ -52,7 +54,8 @@ const useStyles = makeStyles((theme) => ({
         color: "whiteSmoke",
         width: 100,
         textAlign: 'center',
-        marginLeft: '15px'
+        marginLeft: '15px',
+        cursor:'pointer'
     },
     button: {
         marginTop: 20,
@@ -105,10 +108,10 @@ export default function FullWidthGrid() {
                             <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '25%' }}>
                                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                                     <p className={classes.blue} style={{ marginRight: '10px' }}> 
-                                        <AccessibilityIcon style={{ position: "relative",top:'6px', marginLeft: '5px' }}/> Female
+                                     Female
                                     </p>
                                     <p className={classes.grey}>
-                                        <AccessibilityIcon style={{ position: "relative",top:'6px', marginLeft: '5px' }}/>Male
+                                     Male
                                     </p>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'row' }}>
