@@ -9,7 +9,7 @@ export default function ListThumbnailExample() {
             <Text style={styles.heading}>Would you like to invite your friends to join this group ?</Text>
             <Button style={styles.button}><Text style={{ color: 'white', marginLeft: 50 }}>Create Chatters</Text></Button>
             <Button style={styles.button}><Text style={{ color: 'white', marginLeft: 40 }}>Invite via Whatsapp</Text></Button>
-            <View style={styles.button1}><Text style={{ color: 'white', marginLeft: 80, cursor:'pointer' }}>Skip</Text></View>
+            <View style={styles.button1}><Text style={{ color: 'white', marginLeft: 85, cursor:'pointer' }}>Skip</Text></View>
             <StatusBar style="auto" />
         </View>
     )
