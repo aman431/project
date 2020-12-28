@@ -7,7 +7,7 @@ export default class Tab2 extends Component {
     render() {
         return (
             <View>
-                <Text>Hello World</Text>
+                <Text>Add Members</Text>
             </View>
         )
     }

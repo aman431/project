@@ -7,7 +7,7 @@ export default class Tab3 extends Component {
     render() {
         return (
             <View>
-                <Text>Hello World</Text>
+                <Text>Ask Questions</Text>
             </View>
         )
     }

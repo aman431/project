@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {  View, StyleSheet } from 'react-native';
-import {  Text, Button } from 'native-base';
+import { View, StyleSheet } from 'react-native';
+import { Text, Button } from 'native-base';
 import { StatusBar } from 'expo-status-bar';
 
 export default function ListThumbnailExample() {
@@ -9,7 +9,7 @@ export default function ListThumbnailExample() {
             <Text style={styles.heading}>Would you like to invite your friends to join this group ?</Text>
             <Button style={styles.button}><Text style={{ color: 'white', marginLeft: 50 }}>Create Chatters</Text></Button>
             <Button style={styles.button}><Text style={{ color: 'white', marginLeft: 40 }}>Invite via Whatsapp</Text></Button>
-            <Button style={styles.button1}><Text style={{ color: 'white', marginLeft: 60 }}>Skip</Text></Button>
+            <View style={styles.button1}><Text style={{ color: 'white', marginLeft: 80, cursor:'pointer' }}>Skip</Text></View>
             <StatusBar style="auto" />
         </View>
     )
@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgb(46, 33, 70)',
         width: 250,
         marginLeft: 50,
-        marginTop: 20,
+        marginTop: 30,
     }
 })
